@@ -1,0 +1,80 @@
+<html><head>
+    <title>Hunter Profile: ppp3morales7</title>
+    <style>
+        @keyframes move {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+        }
+        .bug {
+            position: absolute;
+            animation: move 5s linear infinite;
+        }
+        .profile {
+            width: 300px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+            z-index: 1;
+        }
+        .profile:hover {
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+            transform: translateY(-10px);
+        }
+        .profile img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .profile h2 {
+            color: #333;
+            margin-top: 20px;
+        }
+        .profile p {
+            color: #666;
+            margin: 20px 0;
+        }
+        .profile button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .profile button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <img class="bug" src="bug1.png" alt="Bug 1" style="width: 50px; animation-delay: 1s;">
+    <img class="bug" src="bug2.png" alt="Bug 2" style="width: 70px; animation-delay: 3s;">
+    <div class="profile">
+        <img src="C:\Users\empre\OneDrive\Música\Documentos\Imagens\Paulino\4ad77a353ed36fb60aae24c4cbe6add1.jpg" alt="ppp3morales7">
+        <h2>ppp3morales7</h2>
+        <p>ppp3morales7 é um aprendiz de caçador, sempre curioso e ansioso para aprender mais sobre o mundo ao seu redor.</p>
+        <button id="messageButton">Enviar Mensagem</button>
+    </div>
+    <script>
+        document.querySelector('#messageButton').addEventListener('click', function() {
+            alert('Você clicou para enviar uma mensagem para ppp3morales7!');
+        });
+    </script>
+
+
+</body></html>
